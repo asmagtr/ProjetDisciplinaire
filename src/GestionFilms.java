@@ -13,7 +13,7 @@ public class GestionFilms {
     public void ajouterFilm(Film film) {
         String query = "INSERT INTO films (nom, duree, genre, version) VALUES (?, ?, ?, ?)";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
-            stmt.setString(1, film.getNom());
+            stmt.setString(1, film.getTitre());
             stmt.setInt(2, film.getDuree());
             stmt.setString(3, film.getGenre());
             stmt.setString(4, film.getVersion());
@@ -30,7 +30,7 @@ public class GestionFilms {
             stmt.setInt(1, film.getDuree());
             stmt.setString(2, film.getGenre());
             stmt.setString(3, film.getVersion());
-            stmt.setString(4, film.getNom());
+            stmt.setString(4, film.getTitre());
             int rowsUpdated = stmt.executeUpdate();
             if (rowsUpdated > 0) {
                 System.out.println("Film modifié avec succès !");
