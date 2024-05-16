@@ -4,8 +4,12 @@ public class Employe {
     String prenom;
     String email;
     String poste_de_travail;
-    public Employe(int id, String nom, String prenom, String email) {
+    public Employe() {
         this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+        this.poste_de_travail = poste_de_travail;
 
 
     }
