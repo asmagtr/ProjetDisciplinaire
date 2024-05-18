@@ -1,3 +1,4 @@
+
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -9,7 +10,7 @@ public class Main {
         Connection conn=db.connect_to_db("defaultdb","avnadmin","AVNS_O7FNZcgdSruUsgcp3SB");
         if (conn != null) {
             // Créer un nouveau compte à enregistrer
-            Comptes nouveauCompte = new Comptes(1, 101, "utilisateur1", "motdepasse123", "utilisateur");
+            Comptes nouveauCompte = new Comptes("utilisateur1","nom1","prenom1", "motdepasse123", "admin");
 
             try {
                 // Enregistrer le compte dans la base de données
