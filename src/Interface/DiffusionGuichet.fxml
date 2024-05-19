@@ -10,6 +10,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.Region?>
@@ -210,36 +211,6 @@
                         <Insets right="10.0" />
                      </HBox.margin>
                   </Pane>
-                  <Pane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
-                     <children>
-                        <HBox layoutX="-1.0" prefHeight="196.0" prefWidth="303.0">
-                           <children>
-                              <ImageView fitHeight="207.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@Icons/Images/IMG_9673.jpg" />
-                                 </image>
-                              </ImageView>
-                              <VBox prefHeight="201.0" prefWidth="182.0">
-                                 <children>
-                                    <Label prefHeight="59.0" prefWidth="185.0" text="Salle" textFill="WHITE" />
-                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Titre" textFill="WHITE" />
-                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Durée" textFill="WHITE" />
-                                    <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Date" textFill="WHITE" />
-                                 </children>
-                                 <HBox.margin>
-                                    <Insets left="20.0" />
-                                 </HBox.margin>
-                              </VBox>
-                           </children>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </HBox>
-                     </children>
-                     <HBox.margin>
-                        <Insets right="10.0" />
-                     </HBox.margin>
-                  </Pane>
                   <Pane layoutX="320.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
                      <children>
                         <HBox layoutX="-4.0" prefHeight="201.0" prefWidth="306.0">
@@ -330,29 +301,11 @@
                         <Insets right="10.0" />
                      </HBox.margin>
                   </Pane>
-               </children>
-            </HBox>
-         </content>
-      </ScrollPane>
-      <Text fill="WHITE" layoutX="246.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diffusion du Jour  : ">
-         <font>
-            <Font name="Microsoft Sans Serif" size="16.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="245.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diffusion de la semaine :">
-         <font>
-            <Font name="Microsoft Sans Serif" size="16.0" />
-         </font>
-      </Text>
-      <ScrollPane layoutX="247.0" layoutY="471.0" prefHeight="219.0" prefWidth="1078.0" stylesheets="@Css/essaie.css">
-         <content>
-            <HBox prefHeight="161.0" prefWidth="1220.0">
-               <children>
-                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
+                  <Pane layoutX="790.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
                      <children>
                         <HBox layoutX="-4.0" prefHeight="201.0" prefWidth="306.0">
                            <children>
-                              <ImageView fitHeight="204.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="207.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@Icons/Images/IMG_9679.jpg" />
                                  </image>
@@ -374,15 +327,60 @@
                            </cursor>
                         </HBox>
                      </children>
-                     <HBox.margin>
-                        <Insets right="10.0" />
-                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+      <Text fill="WHITE" layoutX="246.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diffusion du Jour  : ">
+         <font>
+            <Font name="Microsoft Sans Serif" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="245.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diffusion de la semaine :">
+         <font>
+            <Font name="Microsoft Sans Serif" size="16.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="247.0" layoutY="471.0" prefHeight="219.0" prefWidth="1078.0" stylesheets="@Css/essaie.css">
+         <content>
+            <FlowPane prefHeight="222.0" prefWidth="1063.0">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
+                     <children>
+                        <HBox layoutX="-1.0" prefHeight="196.0" prefWidth="303.0">
+                           <children>
+                              <ImageView fitHeight="207.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/Images/IMG_9673.jpg" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="201.0" prefWidth="182.0">
+                                 <children>
+                                    <Label prefHeight="59.0" prefWidth="185.0" text="Salle" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Titre" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Durée" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Date" textFill="WHITE" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </FlowPane.margin>
                   </Pane>
                   <Pane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
                      <children>
                         <HBox layoutX="-1.0" prefHeight="196.0" prefWidth="303.0">
                            <children>
-                              <ImageView fitHeight="202.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="207.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@Icons/Images/IMG_9673.jpg" />
                                  </image>
@@ -404,45 +402,15 @@
                            </cursor>
                         </HBox>
                      </children>
-                     <HBox.margin>
-                        <Insets right="10.0" />
-                     </HBox.margin>
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </FlowPane.margin>
                   </Pane>
-                  <Pane layoutX="320.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
+                  <Pane layoutX="260.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
                      <children>
-                        <HBox layoutX="-4.0" prefHeight="201.0" prefWidth="306.0">
+                        <HBox layoutX="-1.0" prefHeight="196.0" prefWidth="303.0">
                            <children>
-                              <ImageView fitHeight="201.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@Icons/Images/IMG_9674.jpg" />
-                                 </image>
-                              </ImageView>
-                              <VBox prefHeight="201.0" prefWidth="182.0">
-                                 <children>
-                                    <Label prefHeight="59.0" prefWidth="185.0" text="Salle" textFill="WHITE" />
-                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Titre" textFill="WHITE" />
-                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Durée" textFill="WHITE" />
-                                    <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Date" textFill="WHITE" />
-                                 </children>
-                                 <HBox.margin>
-                                    <Insets left="20.0" />
-                                 </HBox.margin>
-                              </VBox>
-                           </children>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </HBox>
-                     </children>
-                     <HBox.margin>
-                        <Insets right="10.0" />
-                     </HBox.margin>
-                  </Pane>
-                  <Pane layoutX="630.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
-                     <children>
-                        <HBox layoutX="-4.0" prefHeight="201.0" prefWidth="306.0">
-                           <children>
-                              <ImageView fitHeight="201.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="207.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@Icons/Images/IMG_9673.jpg" />
                                  </image>
@@ -464,15 +432,15 @@
                            </cursor>
                         </HBox>
                      </children>
-                     <HBox.margin>
-                        <Insets right="10.0" />
-                     </HBox.margin>
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </FlowPane.margin>
                   </Pane>
-                  <Pane layoutX="780.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
+                  <Pane layoutX="510.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
                      <children>
-                        <HBox layoutX="-4.0" prefHeight="201.0" prefWidth="306.0">
+                        <HBox layoutX="-1.0" prefHeight="196.0" prefWidth="303.0">
                            <children>
-                              <ImageView fitHeight="207.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="207.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@Icons/Images/IMG_9673.jpg" />
                                  </image>
@@ -482,7 +450,7 @@
                                     <Label prefHeight="59.0" prefWidth="185.0" text="Salle" textFill="WHITE" />
                                     <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Titre" textFill="WHITE" />
                                     <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Durée" textFill="WHITE" />
-                                    <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Genre" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Date" textFill="WHITE" />
                                  </children>
                                  <HBox.margin>
                                     <Insets left="20.0" />
@@ -494,12 +462,165 @@
                            </cursor>
                         </HBox>
                      </children>
-                     <HBox.margin>
-                        <Insets right="10.0" />
-                     </HBox.margin>
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </FlowPane.margin>
+                  </Pane>
+                  <Pane layoutX="760.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
+                     <children>
+                        <HBox layoutX="-1.0" prefHeight="196.0" prefWidth="303.0">
+                           <children>
+                              <ImageView fitHeight="207.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/Images/IMG_9673.jpg" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="201.0" prefWidth="182.0">
+                                 <children>
+                                    <Label prefHeight="59.0" prefWidth="185.0" text="Salle" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Titre" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Durée" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Date" textFill="WHITE" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </FlowPane.margin>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
+                     <children>
+                        <HBox layoutX="-1.0" prefHeight="196.0" prefWidth="303.0">
+                           <children>
+                              <ImageView fitHeight="207.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/Images/IMG_9673.jpg" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="201.0" prefWidth="182.0">
+                                 <children>
+                                    <Label prefHeight="59.0" prefWidth="185.0" text="Salle" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Titre" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Durée" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Date" textFill="WHITE" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </FlowPane.margin>
+                  </Pane>
+                  <Pane layoutX="260.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
+                     <children>
+                        <HBox layoutX="-1.0" prefHeight="196.0" prefWidth="303.0">
+                           <children>
+                              <ImageView fitHeight="207.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/Images/IMG_9673.jpg" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="201.0" prefWidth="182.0">
+                                 <children>
+                                    <Label prefHeight="59.0" prefWidth="185.0" text="Salle" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Titre" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Durée" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Date" textFill="WHITE" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </FlowPane.margin>
+                  </Pane>
+                  <Pane layoutX="510.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
+                     <children>
+                        <HBox layoutX="-1.0" prefHeight="196.0" prefWidth="303.0">
+                           <children>
+                              <ImageView fitHeight="207.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/Images/IMG_9673.jpg" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="201.0" prefWidth="182.0">
+                                 <children>
+                                    <Label prefHeight="59.0" prefWidth="185.0" text="Salle" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Titre" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Durée" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Date" textFill="WHITE" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </FlowPane.margin>
+                  </Pane>
+                  <Pane layoutX="760.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;">
+                     <children>
+                        <HBox layoutX="-1.0" prefHeight="196.0" prefWidth="303.0">
+                           <children>
+                              <ImageView fitHeight="207.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/Images/IMG_9673.jpg" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefHeight="201.0" prefWidth="182.0">
+                                 <children>
+                                    <Label prefHeight="59.0" prefWidth="185.0" text="Salle" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Titre" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Durée" textFill="WHITE" />
+                                    <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Date" textFill="WHITE" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </FlowPane.margin>
                   </Pane>
                </children>
-            </HBox>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </FlowPane>
          </content>
       </ScrollPane>
    </children>

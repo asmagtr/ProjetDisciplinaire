@@ -19,13 +19,17 @@
             </ImageView>
             <VBox prefHeight="201.0" prefWidth="182.0">
                <children>
-                  <Label prefHeight="59.0" prefWidth="185.0" text="Titre" textFill="WHITE" />
-                  <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Durée" textFill="WHITE" />
-                  <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Genre" textFill="WHITE" />
+                  <Label alignment="TOP_LEFT" prefHeight="43.0" prefWidth="142.0" text="Titre" textFill="WHITE" />
+                  <Label alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="142.0" text="Durée" textFill="WHITE" />
+                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="10.0" layoutY="69.0" prefHeight="40.0" prefWidth="142.0" text="Genre" textFill="WHITE" />
+                  <Label alignment="TOP_LEFT" layoutX="10.0" layoutY="128.0" prefHeight="73.0" prefWidth="142.0" text="Description" textFill="WHITE" />
                </children>
                <HBox.margin>
                   <Insets left="20.0" />
                </HBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
             </VBox>
          </children>
       </HBox>

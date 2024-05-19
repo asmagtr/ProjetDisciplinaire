@@ -1,0 +1,26 @@
+/* styles.css */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .increment-button, .scroll-pane .decrement-button {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .thumb {
+    -fx-background-color: rgba(0, 0, 0, 0.3); /* Ajustez l'opacité si nécessaire */
+}
+/***************************************************/
+.Shadow .pane{
+-webkit-box-shadow: inset 3px 3px 19px 3px rgba(38,8,38,0.59);
+-moz-box-shadow: inset 3px 3px 19px 3px rgba(38,8,38,0.59);
+box-shadow: inset 3px 3px 19px 3px rgba(38,8,38,0.59);
+}
