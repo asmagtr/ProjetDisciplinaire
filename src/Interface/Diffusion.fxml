@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #5b4b60; -fx-background-radius: 0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox layoutX="-4.0" prefHeight="201.0" prefWidth="306.0">
          <children>
@@ -22,7 +20,7 @@
                   <Label prefHeight="59.0" prefWidth="185.0" text="Salle" textFill="WHITE" />
                   <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Titre" textFill="WHITE" />
                   <Label layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="185.0" text="Durée" textFill="WHITE" />
-                  <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Genre" textFill="WHITE" />
+                  <Label layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="185.0" text="Date" textFill="WHITE" />
                </children>
                <HBox.margin>
                   <Insets left="20.0" />
@@ -31,4 +29,7 @@
          </children>
       </HBox>
    </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
 </Pane>
