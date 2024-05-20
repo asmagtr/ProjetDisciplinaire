@@ -12,7 +12,7 @@ public class GestionSalles {
     public void ajouterSalle(Salle salle) {
         String query = "INSERT INTO salles (numero, capacite) VALUES (?, ?)";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
-            stmt.setInt(1, salle.getNumero());
+            stmt.setInt(1, salle.getId());
             stmt.setInt(2, salle.getCapacite());
             stmt.executeUpdate();
             System.out.println("Salle ajoutée avec succès !");
@@ -25,7 +25,7 @@ public class GestionSalles {
         String query = "UPDATE salles SET capacite = ? WHERE numero = ?";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setInt(1, salle.getCapacite());
-            stmt.setInt(2, salle.getNumero());
+            stmt.setInt(2, salle.getId());
             int rowsUpdated = stmt.executeUpdate();
             if (rowsUpdated > 0) {
                 System.out.println("Salle modifiée avec succès !");

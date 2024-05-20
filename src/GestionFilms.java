@@ -17,8 +17,12 @@ public class GestionFilms {
             stmt.setInt(2, film.getDuree());
             stmt.setString(3, film.getGenre());
             stmt.setString(4, film.getVersion());
-            stmt.executeUpdate();
-            System.out.println("Film ajouté avec succès !");
+            int rowsAffected = stmt.executeUpdate();
+            if (rowsAffected > 0) {
+                System.out.println("Film ajouté avec succès !");
+            } else {
+                System.out.println("Aucune ligne affectée lors de l'ajout du film.");
+            }
         } catch (SQLException e) {
             System.out.println("Erreur lors de l'ajout du film : " + e.getMessage());
         }

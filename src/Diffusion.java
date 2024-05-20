@@ -37,7 +37,7 @@ public class Diffusion {
     }
 
     // Getter pour l'attribut 'date'
-    public Date getDate() {
+    public java.sql.Date getDate() {
         return date;
     }
 
