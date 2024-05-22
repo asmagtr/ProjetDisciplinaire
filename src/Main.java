@@ -1,32 +1,32 @@
-import java.sql.Connection;
-import java.sql.SQLException;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.FlowPane;
+import javafx.stage.Stage;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        fonctionsBD db=new fonctionsBD();
-        Connection conn=db.connect_to_db("defaultdb","avnadmin","AVNS_O7FNZcgdSruUsgcp3SB");
-        if (conn != null) {
-            // Créer un nouveau compte à enregistrer
-            Comptes nouveauCompte = new Comptes(1, 101, "utilisateur1", "motdepasse123", "utilisateur");
+public class Main extends Application {
 
-            try {
-                // Enregistrer le compte dans la base de données
-                nouveauCompte.save(conn);
-            } catch (SQLException e) {
-                System.err.println("Erreur lors de l'enregistrement du compte : " + e.getMessage());
-            }
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("votre_fichier.fxml"));
+        primaryStage.setTitle("Votre titre");
+        primaryStage.setScene(new Scene(root, 1364, 707));
+        primaryStage.show();
 
-            // Fermer la connexion à la base de données après utilisation
-            try {
-                conn.close();
-            } catch (SQLException e) {
-                System.err.println("Erreur lors de la fermeture de la connexion : " + e.getMessage());
-            }
-        } else {
-            System.err.println("La connexion à la base de données a échoué.");
-        }
+        // Créez et ajoutez des instances de FilmPane dynamiquement ici
+        FilmPane film1 = new FilmPane("url_image", "Titre film 1", "Durée film 1", "Genre film 1", "Description film 1");
+        FilmPane film2 = new FilmPane("url_image", "Titre film 2", "Durée film 2", "Genre film 2", "Description film 2");
+
+        // Accédez au FlowPane à partir du fichier FXML
+        FlowPane flowPane = (FlowPane) root.lookup("#flowPane");
+
+        // Ajoutez les instances de FilmPane au FlowPane
+        flowPane.getChildren().addAll(film1, film2);
     }
 
+
+    public static void main(String[] args) {
+        launch(args);
+    }
 }
