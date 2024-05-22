@@ -18,17 +18,12 @@
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
-        <CLASSES />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/javafx-sdk-22.0.1/lib" />
+        </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/javafx-sdk-22.0.1/src/javafx.base" />
-          <root url="file://$MODULE_DIR$/javafx-sdk-22.0.1/src/javafx.controls" />
-          <root url="file://$MODULE_DIR$/javafx-sdk-22.0.1/src/javafx.fxml" />
-          <root url="file://$MODULE_DIR$/javafx-sdk-22.0.1/src/javafx.graphics" />
-          <root url="file://$MODULE_DIR$/javafx-sdk-22.0.1/src/javafx.media" />
-          <root url="file://$MODULE_DIR$/javafx-sdk-22.0.1/src/javafx.swing" />
-          <root url="file://$MODULE_DIR$/javafx-sdk-22.0.1/src/javafx.web" />
-        </SOURCES>
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/javafx-sdk-22.0.1/lib" recursive="false" />
       </library>
     </orderEntry>
   </component>
